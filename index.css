@@ -1,0 +1,177 @@
+/* for reference only, remove comment symbols when needed
+.colorpallete{
+    color: #4B2E2A; Espresso Brown    - Text Color (?, too dark for anything else but that) 
+    color: #7B4B3A; Mocha Brown       - Headings 
+    color: #AF8F6F; Light Brown       - Highlight/Navigation (?)
+    color: #897057; Hover Brown       - Hover Navigation
+    color: #F6F0F0; Pinkish Cream     - Background Color 
+    color: #A8B695; Sage Green        - Accents 
+    color: #6E7F56; Olive Green       - Buttons 
+}
+*/
+body{
+    color: #4B2E2A;
+}
+/*bgimage*/
+.bgimg{
+    background-image: url(beans.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*navigations*/
+/*top nav*/
+.topnav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #AF8F6F;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+.topnav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4B2E2A;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/*bottom nav*/
+.botnav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #AF8F6F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px -2px 5px rgba(0,0,0,0.15);
+    z-index: 1000;
+}
+.botnav .nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.botnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.botnav li {
+    margin: 0;
+}
+.botnav a {
+    display: block;
+    color: #4B2E2A;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.botnav a:hover {
+    background-color: #897057;
+    color: #FFF9F2;
+}
+/*this should pin the copyright to the right of the botnav*/
+.botnav .copyright {
+    font-size: 0.85rem;
+    color: #4B2E2A;
+    text-align: center;
+    line-height: 1.2; 
+    white-space: normal;       
+}
+
+/*main content wrapper*/
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10% 5% 5% 5%;
+    gap: 20px;
+}
+
+/*content box for introduction*/
+.box1 {
+    background-color: #AF8F6F;
+    width: 30%;
+    border-radius: 5%;
+    padding: 20px;
+    opacity: 0.9;
+}
+.box1 h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.menu-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background-color: #6E7F56;
+    color: #FFF9F2;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+.menu-btn:hover {
+    background-color: #4B2E2A;
+}
+
+/*map embed*/
+/*dunno how to do this, but here goes*/
+.map-box {
+    background-color: #AF8F6F;
+    border-radius: 5%;
+    padding: 20px;
+    opacity: 0.9;
+    width: 40%;
+    font-family: sans-serif;
+    color: #4B2E2A;
+}
+.map-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border: 2px solid #6b4226;
+    border-radius: 10px;
+}
+.map-image img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+.map-image:hover img {
+    transform: scale(1.2);
+}
+
+/*promo box*/
+.promo-box {
+    background-color: #F6F0F0;
+    border: 2px dotted #7B4B3A;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 40px auto 80px auto;
+    width: 80%;
+    text-align: center;
+    color: #4B2E2A;
+    opacity: 0.95;
+}
+.promo-box h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #7B4B3A;
+}
+.promo-img {
+    margin-top: 10px;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 8px;
+}
