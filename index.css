@@ -154,24 +154,36 @@ body{
 
 /*promo box*/
 .promo-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #F6F0F0;
     border: 2px dotted #7B4B3A;
     border-radius: 10px;
     padding: 20px;
     margin: 40px auto 80px auto;
     width: 80%;
-    text-align: center;
     color: #4B2E2A;
     opacity: 0.95;
+    gap: 20px;
 }
-.promo-box h3 {
+.promo-text {
+    flex: 2;
+    text-align: left;
+}
+.promo-text h3 {
     margin-top: 0;
     font-size: 1.5rem;
     color: #7B4B3A;
 }
-.promo-img {
-    margin-top: 10px;
-    max-width: 300px;
+.promo-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.promo-image img {
+    max-width: 180px;
     width: 100%;
     border-radius: 8px;
 }
