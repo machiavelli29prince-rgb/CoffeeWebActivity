@@ -9,21 +9,34 @@
     color: #6E7F56; Olive Green       - Buttons 
 }
 */
-body{
-    color: #4B2E2A;
-}
-/*bgimage*/
-.bgimg{
-    background-image: url(beans.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
+*{
+    margin: 0px;
 }
 
-/*navigations*/
-/*top nav*/
-.topnav{
+body{
+    color: #4B2E2A;
+    font-family:sans-serif;
+    font-size: 16px; 
+    background-color: #000000;
+}
+
+body > *{
+    position: relative;
+}
+#background-image{
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   background-image: url('../img/beans.jpg');
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   opacity: 0.5;
+}
+
+.top-nav{
     position: fixed;
     top: 0;
     left: 0;
@@ -36,86 +49,42 @@ body{
     box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
     z-index: 1000;
 }
-.topnav .logo {
+.top-nav .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #4B2E2A;
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
-}
-/*bottom nav*/
-.botnav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #AF8F6F;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0px -2px 5px rgba(0,0,0,0.15);
-    z-index: 1000;
-}
-.botnav .nav-links {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-.botnav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-.botnav li {
-    margin: 0;
-}
-.botnav a {
-    display: block;
-    color: #4B2E2A;
-    padding: 14px 20px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-.botnav a:hover {
-    background-color: #897057;
-    color: #FFF9F2;
-}
-/*this should pin the copyright to the right of the botnav*/
-.botnav .copyright {
-    font-size: 0.85rem;
-    color: #4B2E2A;
-    text-align: center;
-    line-height: 1.2; 
-    white-space: normal;       
 }
 
 /*main content wrapper*/
 .content {
+    background-color:#AF8F6F ;
+    min-height: 45vh;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 10% 5% 5% 5%;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-top:50px;
+    padding: 0px 2%;
     gap: 20px;
 }
 
 /*content box for introduction*/
-.box1 {
-    background-color: #AF8F6F;
-    width: 30%;
+.title-box {
     border-radius: 5%;
     padding: 20px;
-    opacity: 0.9;
+    opacity: 1;
 }
-.box1 h2 {
-    font-size: 2rem;
+.title-box h1 {
+    font-size: 7.5rem;
     margin-bottom: 10px;
 }
 .menu-btn {
     display: inline-block;
     margin-top: 10px;
-    padding: 10px 18px;
+    padding: 1em 1.3em;
     background-color: #6E7F56;
+    font-size: 1.2rem;
     color: #FFF9F2;
     text-decoration: none;
     border-radius: 6px;
@@ -125,31 +94,22 @@ body{
     background-color: #4B2E2A;
 }
 
-/*map embed*/
-/*dunno how to do this, but here goes*/
-.map-box {
-    background-color: #AF8F6F;
-    border-radius: 5%;
-    padding: 20px;
-    opacity: 0.9;
-    width: 40%;
-    font-family: sans-serif;
-    color: #4B2E2A;
+.coffee-img{
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.map-image {
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    border: 2px solid #6b4226;
-    border-radius: 10px;
-}
-.map-image img {
-    width: 100%;
-    height: 100%;
+
+.coffee-img img{
+    display: block;
     transition: transform 0.5s ease;
+    max-width: 90%;
 }
-.map-image:hover img {
+
+.coffee-img img:hover{
     transform: scale(1.2);
+    position: relative;
 }
 
 /*promo box*/
@@ -162,22 +122,22 @@ body{
     border-radius: 10px;
     padding: 20px;
     margin: 40px auto 80px auto;
+    height: 40%;
     width: 80%;
     color: #4B2E2A;
     opacity: 0.95;
-    gap: 20px;
 }
 .promo-text {
-    flex: 2;
+    font-size: 1.2rem;
     text-align: left;
 }
 .promo-text h3 {
     margin-top: 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #7B4B3A;
 }
 .promo-image {
-    flex: 1;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,4 +146,101 @@ body{
     max-width: 180px;
     width: 100%;
     border-radius: 8px;
+}
+
+.map-promo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #af8f6f4e;
+}
+
+.map-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 40px;
+    width: 80vw;
+    box-sizing: border-box;
+}
+.map-image {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    border: 2px solid #6E7F56;
+    border-radius: 10px;
+}
+.map-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+}
+.map-image:hover img {
+    transform: scale(1.2);
+}
+
+.location-text{
+    background-color: #f6f0f0cb;
+    border-radius: 10px;
+    padding: 14px 20px;
+    color: #7B4B3A;
+    font-size: 1.25rem;
+
+}
+
+.location-text > h3 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+
+
+/*bottom nav*/
+.bot-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #AF8F6F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px -2px 5px rgba(0,0,0,0.15);
+    z-index: 1000;
+}
+.bot-nav .nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.bot-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.bot-nav li {
+    margin: 0;
+}
+.bot-nav a {
+    display: block;
+    color: #4B2E2A;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.bot-nav a:hover {
+    background-color: #897057;
+    color: #FFF9F2;
+}
+/*this should pin the copyright to the right of the bot-nav*/
+.bot-nav .copyright {
+    font-size: 0.85rem;
+    color: #4B2E2A;
+    text-align: center;
+    line-height: 1.2; 
+    white-space: normal;
+    padding-right: 10px;       
 }
