@@ -9,6 +9,9 @@
     color: #6E7F56; Olive Green       - Buttons 
 }
 */
+body{
+    background-color: #000000;
+}
 #background-image{
    top: 0;
    left: 0;
