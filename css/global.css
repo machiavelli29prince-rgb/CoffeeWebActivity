@@ -1,0 +1,97 @@
+/* for reference only, remove comment symbols when needed
+.colorpallete{
+    color: #4B2E2A; Espresso Brown    - Text Color (?, too dark for anything else but that) 
+    color: #7B4B3A; Mocha Brown       - Headings 
+    color: #AF8F6F; Light Brown       - Highlight/Navigation (?)
+    color: #897057; Hover Brown       - Hover Navigation
+    color: #F6F0F0; Pinkish Cream     - Background Color 
+    color: #A8B695; Sage Green        - Accents 
+    color: #6E7F56; Olive Green       - Buttons 
+}
+*/
+
+
+
+*{
+    margin: 0px;
+}
+
+body{
+    color: #4B2E2A;
+    font-family:sans-serif;
+    font-size: 16px; 
+    background-color: #F6F0F0;
+}
+
+body > *{
+    position: relative;
+}
+
+.top-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #AF8F6F;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+.top-nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/*bottom nav*/
+.bot-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #AF8F6F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px -2px 5px rgba(0,0,0,0.15);
+    z-index: 1000;
+}
+.bot-nav .nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.bot-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.bot-nav li {
+    margin: 0;
+}
+.bot-nav a {
+    display: block;
+    color: #4B2E2A;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.bot-nav a:hover {
+    background-color: #897057;
+    color: #FFF9F2;
+}
+/*this should pin the copyright to the right of the bot-nav*/
+.bot-nav .copyright {
+    font-size: 0.85rem;
+    color: #4B2E2A;
+    text-align: center;
+    line-height: 1.2; 
+    white-space: normal;
+    padding-right: 10px;       
+}
