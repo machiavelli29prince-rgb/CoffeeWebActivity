@@ -28,6 +28,15 @@ body{
     color: #4B2E2A;
     opacity: 0.95;
     gap: 20px;
+    transition: background-color 0.3s ease;
+}
+.event-box:hover{
+    background-color: #AF8F6F;
+    color: #F6F0F0;
+}
+
+.event-box:hover .event-text h3{
+    color: #F6F0F0;
 }
 .event-text {
     flex: 2;

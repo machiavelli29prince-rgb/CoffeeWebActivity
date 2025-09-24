@@ -35,14 +35,14 @@ body{
 }
 
 .menu > *:nth-child(even){
-    background-color: #7B4B3A;
+    background-color: #4B2E2A;
     color: #ffffff;
 
 }
 
 .menu > *:nth-child(odd){
-    background-color: #F6F0F0;
-    color: #7B4B3A;
+    background-color: #AF8F6F;
+    color: #4B2E2A;
 }
 
 .menu > * > h2 {
@@ -79,7 +79,7 @@ body{
 }
 
 .menu > *:nth-child(even) > .item{
-    background-color: #7B4B3A;
+    background-color: #AF8F6F;
     border: 2px solid #F6F0F0;
 
 }
@@ -93,7 +93,7 @@ body{
 }
 
 .item > img{
-    width: 175px;
+    height: 175px;
     border-radius: 10px;
 }
 
