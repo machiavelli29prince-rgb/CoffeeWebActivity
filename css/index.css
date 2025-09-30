@@ -42,10 +42,9 @@ body{
 .title-box {
     border-radius: 5%;
     padding: 20px;
-    opacity: 1;
 }
 .title-box h1 {
-    font-size: 7.5rem;
+    font-size: 8.5vw;
     margin-bottom: 10px;
 }
 .menu-btn {
@@ -106,7 +105,6 @@ body{
     color: #7B4B3A;
 }
 .promo-image {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,4 +164,80 @@ body{
 .location-text > h3 {
     text-align: center;
     font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 800px){
+    .content{
+        min-height: 15vh;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        padding-top: 20px;
+        z-index: 1;
+
+    }
+
+    .title-box{
+        justify-content: center;
+    }
+
+    .title-box h1{
+        font-size: 4.2rem;
+    }
+
+    .menu-btn{
+        display: none;
+    }
+
+    .coffee-img{
+        display: none;
+    }
+
+    .map-promo{
+        padding-bottom: 300px;
+
+    }
+
+    .promo-box{
+        margin-bottom: 10px;
+    }
+
+    .promo-text {
+        font-size: 1rem;
+        text-align: left;
+    }
+    .promo-text h3 {
+        margin-top: 0;
+        font-size: 1.75rem;
+        color: #7B4B3A;
+    }
+
+
+    .promo-image img{
+        max-width: 120px;
+    }
+
+    .map-box{
+        flex-direction: column;
+    }
+
+    .map-image{
+        border: none;
+    }
+
+    .map-image iframe {
+        width: 84vw;
+        height: 30vh;
+        border: none;
+    }
+
+
+    .location-text{
+        font-size: 1.25rem;
+        padding: 20px;
+    }
+
+    .location-text h3{
+        font-size: 2rem;
+    }
 }
