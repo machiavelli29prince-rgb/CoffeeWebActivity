@@ -33,6 +33,13 @@ body{
     padding: 20px 0px 20px 0px;
     text-align: center;
     background-color: #AF8F6F;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+.top-title:hover{
+    background-color: #A8B695;
+    color: #F6F0F0;
 }
 
 .menu{
@@ -109,7 +116,9 @@ body{
 }
 
 .item > img{
-    height: 175px;
+    width: 180px;   
+    height: 140px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -152,7 +161,8 @@ body{
     }
 
     .item > img{
-        height: 125px;
+        width: 160px;   
+        height: 120px;
     }
 
     .notes{

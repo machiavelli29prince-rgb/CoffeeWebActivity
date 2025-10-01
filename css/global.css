@@ -51,6 +51,11 @@ body > *{
     letter-spacing: 2px;
 }
 
+.top-nav .logo a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
 /*bottom nav*/
 .bot-nav {
     position: fixed;

@@ -36,6 +36,9 @@ body{
     margin-top:50px;
     padding: 0px 2%;
     gap: 20px;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+
 }
 
 /*content box for introduction*/
@@ -94,7 +97,20 @@ body{
     width: 80%;
     color: #4B2E2A;
     opacity: 0.95;
+    transition: background-color 0.3s ease;
 }
+
+.promo-box:hover,
+.content:hover{
+    background-color: #A8B695;
+    color: #F6F0F0;
+}
+
+.promo-box:hover .promo-text,
+.promo-box:hover .promo-text > h3{
+    color: #F6F0F0;
+}
+
 .promo-text {
     font-size: 1.2rem;
     text-align: left;
@@ -104,6 +120,16 @@ body{
     font-size: 2rem;
     color: #7B4B3A;
 }
+
+.promo-text > ul{
+    list-style: none;
+}
+
+.promo-text > ul > li::before{
+    content: "☕ ";
+}
+
+
 .promo-image {
     display: flex;
     justify-content: center;
