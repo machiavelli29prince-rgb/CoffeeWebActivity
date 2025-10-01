@@ -132,7 +132,11 @@ body{
 }
 
 .notes > ul{
-    list-style-type: square;
+    list-style-type: none;
+}
+
+.notes > ul > li::before{
+    content: "☕ ";
 }
 
 .notes > h2 {
