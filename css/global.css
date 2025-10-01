@@ -16,6 +16,10 @@
     margin: 0px;
 }
 
+*::selection{
+    background-color: #6E7F56;
+}
+
 body{
     color: #4B2E2A;
     font-family:sans-serif;
